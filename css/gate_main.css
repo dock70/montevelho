@@ -14,3 +14,6 @@ ins{text-decoration:none;}
 del{text-decoration:line-through;}
 .clear { clear: both; display: block; overflow: hidden; visibility: hidden; width:0px; line-height:0px; font-size:0px;}
 /*SITE CSS*/
+
+.container {}
+#gateDoor {}
