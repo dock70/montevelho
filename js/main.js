@@ -5,6 +5,14 @@ $(document).ready(function(){
 		$("#gateDoor").hide();
 	});
 
+	var $container = $('#container');
+	// init
+	$container.isotope({
+	  // options
+	  itemSelector: '.item',
+	  layoutMode: 'masonry'
+	});
+
 });
 
 

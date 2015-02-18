@@ -2,6 +2,7 @@ ol, ul {list-style:none;}
 
 body{
 	position: relative;
+	font-family: 'Lato', sans-serif;
 }
 
 h1 {color: green; margin-bottom: 100px; margin-top: 50px;}
@@ -30,11 +31,12 @@ h1 {color: green; margin-bottom: 100px; margin-top: 50px;}
 #gateDoor > div ul li:first-child{
 	border-right: 1px solid grey;
 }
+/**END GATE DOOR**/
 
 /**HEADER**/
 .logo a{width: 50%;}
 .logo img{width: 100%;}
-.menu{padding-top: 20px;}
+.menu{padding-top: 20px; display: inline-block; margin: 0 auto;}
 .menu .btn-group{width: 100%}
 .menu button{width: 25%;}
 .socialIcons {padding-top: 20px;}
@@ -42,7 +44,7 @@ h1 {color: green; margin-bottom: 100px; margin-top: 50px;}
 /***END HEADER***/
 
 
-.btnMenu {border-right: 1px solid #000; border-radius: 0; background: none; line-height: 10px;}
+.btnMenu { border-radius: 0; background: none; line-height: 10px;}
 .btnMenu:last-child {border-right: none;}
 .logoEsporao {display: block; text-align: center;}
 footer {margin-top: 50px;}
