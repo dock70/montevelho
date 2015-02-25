@@ -16,25 +16,25 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
         <!-- ****************  TO ENABLE TE USE OF RESPONSIVE  **************** -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- ****************  FACEBOOK  ************************** -->
-        <meta property="og:title" content=""/>
-        <meta property="og:url" content=""/>
-        <meta property="og:image" content="share.jpg"/>
-        <meta property="og:description" content=""/>
         <!-- ****************  FAVICON  ************************** -->
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="icon" type="image/ico" href="favicon.ico" />
-        <!-- ****************  JAVASCRIPT (JQUERY)  ************************** -->
+        <!-- ******  JAVASCRIPT (JQUERY) ********** -->
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <!-- MAIN CSS -->
-        <script src="js/isotope.pkgd.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+
+        <!--ISOTOPE-->
+        <script src="js/isotope.pkgd.min.js"></script>
     </head>
+
     <!--BODY-->
-    <body>
+    <body>  
+            <!--GATEDOOR-->
             <div id="gateDoor" class="">
                 <div>
                     <h1>Bem Vindo!</h1>
@@ -44,41 +44,104 @@
                         <li><a href="#">Não</a></li>
                 </div>
             </div>
-            <header>
-                <div class="row">
-                    <nav class="navbar navbar-header col-md-12 col-lg-12"> 
-                        <div class="logo pull-left">
-                            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Monte Velho"></a> 
-                        </div>
 
-                
+            <!--END GATEDOOR-->
 
-                        <!-- /.logo -->
-                        <div class="menu">
-                            <div class="btn-group" role="group" aria-label="...">
-                              <button type="button" class="btn btnMenu">Home</button>
-                              <button type="button" class="btn btnMenu">Tinto</button>
-                              <button type="button" class="btn btnMenu">Branco</button>
-                              <button type="button" class="btn btnMenu">Contactos</button>
-                            </div>
-                        </div>
-                        <!-- /.Menu -->
-                        <div class="socialIcons pull-right">
-                            <ul class="">
-                                <li><a href="https://www.facebook.com/esporaoworld"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="https://twitter.com/EsporaoWines/"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="http://www.instagram.com"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                        <!-- /.redes sociais -->
-                    </nav>
+            <!--ISOTOPE-->
+            <div id="mainMenu">
+                <div id="filters">
+                    <ul>
+                        <li><a data-filter="*" id="all" class="active">Todos</a></li>
+                        <li><a data-filter="momentos" id="momentos">O que contas...</a></li>
+                        <li><a data-filter="recomendacoes" id="recomendacoes">Vais bem com...</a></li>
+                        <li><a data-filter="noticias" id="noticias">Novidades...</a></li>
+                    </ul>
                 </div>
-            </header>
-
-            <div class="container">
-                <div class="item">...</div>
-                <div class="item">...</div>
-                <div class="item">...</div>
             </div>
+            <div id="isotopeWrapper">
+                <div class="isotope">
+                    <div class="item measures width2 recomendacoes">
+                        <a href="#">
+                            <img src="img/cake.jpg">
+                            <div class="hover r">
+                                <p>Recomendações</p><i class="fa fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item measures momentos">
+                        <a href="#">
+                            <img src="img/brinde.jpg">
+                            <div class="hover m">
+                                <p>Momentos</p><i class="fa fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item measures noticias">
+                        <a href="#">
+                            <img src="img/bottles.jpg"> 
+                            <div class="hover n">
+                                <p>Notícias</p><i class="fa fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item measures width2 momentos">     <a href="#">
+                            <img src="img/camping.jpg">
+                            <div class="hover m">
+                                <p>Momentos</p><i class="fa fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item measures height2 noticias">
+                        <a href="#">
+                            <img src="img/street.jpg">
+                            <div class="hover n">
+                                <p>Notícias</p><i class="fa fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item measures recomendacoes">
+                        <a href="#">
+                            <img src="img/food.jpg">
+                            <div class="hover r">
+                                <p>Recomendações</p><i class="fa fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item measures recomendacoes">
+                        <a href="#">
+                            <img src="img/foodpt.jpg">
+                            <div class="hover r">
+                                <p>Recomendações</p><i class="fa fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item measures momentos">
+                        <a href="#">
+                            <img src="img/home.jpg">
+                            <div class="hover m">
+                                <p>Momentos</p><i class="fa fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item measures momentos">
+                        <a href="#">
+                            <img src="img/friends.jpg">
+                            <div class="hover m">
+                                <p>Momentos</p><i class="fa fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--END ISOTOPE-->
     </body>
 </html>

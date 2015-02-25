@@ -1,14 +1,23 @@
+
+/**GENERAL**/
 ol, ul {list-style:none;}
 
 body{
 	position: relative;
 	font-family: 'Lato', sans-serif;
 }
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 h1 {color: green; margin-bottom: 100px; margin-top: 50px;}
+
 /**GATE DOOR**/
 #gateDoor {
 	width: 100%;
+	height: 100%;
 	background-color: rgba(255,255,255,0.6);
 	position: absolute;
 	z-index: 1;
@@ -33,18 +42,170 @@ h1 {color: green; margin-bottom: 100px; margin-top: 50px;}
 }
 /**END GATE DOOR**/
 
-/**HEADER**/
-.logo a{width: 50%;}
-.logo img{width: 100%;}
-.menu{padding-top: 20px; display: inline-block; margin: 0 auto;}
-.menu .btn-group{width: 100%}
-.menu button{width: 25%;}
-.socialIcons {padding-top: 20px;}
-.socialIcons ul li{ float: left; margin-left: 10px;}
-/***END HEADER***/
 
 
-.btnMenu { border-radius: 0; background: none; line-height: 10px;}
-.btnMenu:last-child {border-right: none;}
-.logoEsporao {display: block; text-align: center;}
-footer {margin-top: 50px;}
+/*GRID - ISOTOPE*/
+#mainMenu{
+	width: 100%;
+	max-width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#filters{
+	width: 100%;
+	max-width: 1170px;
+	margin-bottom: 15px;
+	background-color: rgba(101,100,102,0.3);
+	text-align: center;
+	box-sizing:border-box;
+	padding: 0.5%;
+}
+#filters ul li{
+	transition:all 0.3s ease;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+}
+#filters ul li a{
+	color: white;
+	box-sizing:border-box;
+	padding: 5px;
+	border: 2px solid transparent;
+}
+#filters ul li a:hover{
+	cursor: pointer;
+	text-decoration: none;
+}
+#filters a#all{
+	border-bottom: 2px solid white;
+}
+#filters a#all:hover{
+	border: 2px solid white;
+}
+#filters a#all.active{
+	border: 2px solid white;
+}
+#filters a#momentos{
+	border-bottom: 2px solid #ac274c;
+}
+#filters a#momentos:hover {
+	border: 2px solid #ac274c;
+}
+#filters a#momentos.active {
+	border: 2px solid #ac274c;
+}
+#filters a#recomendacoes{
+	border-bottom: 2px solid #8b8125;
+}
+#filters a#recomendacoes:hover {
+	border: 2px solid #8b8125;
+}
+#filters a#recomendacoes.active {
+	border: 2px solid #8b8125;
+}
+#filters a#noticias{
+	border-bottom: 2px solid #c9a23b;
+}
+#filters a#noticias:hover {
+	border: 2px solid #c9a23b;
+}
+#filters a#noticias.active {
+	border: 2px solid #c9a23b;
+}
+#isotopeWrapper{
+	max-width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.isotope {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.item{
+	margin-bottom: 30px;
+}
+.item a{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.item a:hover .hover{
+	transform:translateY(0);
+}
+.item a .hover{
+	transition: all 0.3s;
+	transform:translateY(100%);
+	position: absolute;
+	height: 20%;
+	bottom: 0;
+	color: white;
+	width: 100%;
+}
+.item a .hover.m{
+	background-color: rgba(167,29,62,0.8);
+}
+.item a .hover.n{
+	background-color: rgba(202,163,60,0.8);
+}
+.item a .hover.r{
+	background-color: rgba(142,131,39,0.8);
+}
+.item a p, .item a i{
+	font-size: 1.2em;
+	position: relative;
+	top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+ }
+.item a p{
+	padding-left: 10%;
+	float: left;
+}
+.item a i{
+	padding-right: 10%;
+	float: right;
+}
+.item img{
+	width: 100%;
+}
+
+
+/**MEDIDAS DAS IMAGENS**/
+.measures{width: 270px; height: 270px }
+.width2{width: 570px;}
+.height2{height: 570px;}
+
+/*END GRID*/
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 480px) {
+	.width2{clip: rect(0,270px,270px,0);}
+  	.isotope div{
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+	#mainMenu{
+		position: relative;
+	}
+	#filters ul{
+		height: 100%;
+		padding-left: 0;
+  	}
+  	#filters ul li{
+		display: block;
+		line-height: 30px;
+  	}
+
+}
+@media only screen and (max-width: 767px) {
+ 		.isotope{
+ 			width: 100%;
+ 		}
+ }
